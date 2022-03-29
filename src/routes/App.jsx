@@ -6,6 +6,7 @@ import Login from '../containers/Login';
 import PasswordRecovery from '../pages/PasswordRecovery';
 import SendEmail from '../pages/SendEmail';
 import NewPassword from '../pages/NewPassword';
+import MyAccount from '../pages/MyAccount';
 import NotFound from '../pages/NotFound';
 import '../styles/global.css';
 
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/password-recovery" element={<PasswordRecovery />} />
           <Route path="/send-email" element={<SendEmail />} />
           <Route path="/new-password" element={<NewPassword />} />
+          <Route path="/account" element={<MyAccount />} />
 
           <Route path='*' element={<NotFound />} />
         </Routes>
