@@ -3,17 +3,17 @@ import "@styles/ProductItem.scss";
 
 import addToCart from '@icons/bt_add_to_cart.svg';
 
-const ProductItem = () => {
+const ProductItem = ({product}) => {
   return (
     <div className="ProductItem">
       <img
-        src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-        alt=""
+        src={product.images[0]}
+        alt={product.title}
       />
       <div className="product-info">
         <div>
-          <p>$20,000</p>
-          <p>Bike</p>
+          <p>${product.price}</p>
+          <p>{product.title}</p>
         </div>
         <figure>
           <img src={addToCart} alt="" />
