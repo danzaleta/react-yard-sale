@@ -40,7 +40,7 @@ module.exports = {
             },
             {
                 test: /\.(css|scss)$/,
-                use:[
+                use: [
                     'style-loader',
                     'css-loader',
                     'sass-loader',
@@ -61,7 +61,7 @@ module.exports = {
             filename: '[name].css'
         }),
     ],
-    devServer:{
+    devServer: {
         static: path.join(__dirname, 'dist'),
         compress: true,
         port: 3005,
