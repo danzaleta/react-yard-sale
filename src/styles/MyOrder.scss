@@ -1,11 +1,16 @@
 @use 'vars';
 
-.product-detail{
+.MyOrder{
     width: 360px;
     position: absolute;
     right: 0;
-    padding: 0 24px;
+    padding: 24px;
     box-sizing: border-box;
+    background-color: var(--white);
+    top: 60px;
+    bottom: 0;
+    border-radius: 6px;
+    border: 1px solid var(--very-light-pink);
 }
 
 .title-container{
@@ -60,7 +65,7 @@
 }
 
 @media (max-width: 640px) {
-    .product-detail{
+    .MyOrder{
         width: 100%;
     }
 }
